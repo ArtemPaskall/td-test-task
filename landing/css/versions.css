@@ -4,20 +4,16 @@
 
 body.realestate_version .section-title small,
 body.realestate_version .property-detail i,
-body.realestate_version .customwidget li i,
 body.realestate_version .navbar-nav span {
     color: #229be1 !important;
 }
 
-body.realestate_version .lead strong,
-body.realestate_version .icon-wrapper:hover a,
 body.realestate_version a:hover,
 body.realestate_version a:focus {
     color: #d90000;
 }
 
-body.realestate_version .property-detail i,
-body.realestate_version .property-detail .col-md-3:hover img {
+body.realestate_version .property-detail i {
     border-color: #229be1 !important;
 }
 
@@ -30,11 +26,6 @@ body.realestate_version .btn-light {
 GRADIENTS 
 **************************************/
 
-body.realestate_version .icon_wrap:hover,
-body.realestate_version .nav-pills > li.active > a,
-body.realestate_version .nav-pills > li.active > a:focus,
-body.realestate_version .nav-pills > li.active > a:hover,
-body.realestate_version .icon-wrapper:hover i,
 body.realestate_version .grd1 {
     color: #ffffff;
     background: #7d48c4;
@@ -44,20 +35,7 @@ body.realestate_version .grd1 {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#7d48c4', endColorstr='#229be1', GradientType=1);
 }
 
-body.realestate_version .icon_wrap,
 body.realestate_version .dmtop:hover,
-body.realestate_version .cac:hover,
-body.realestate_version .features-right li:hover i,
-body.realestate_version .features-left li:hover i,
-body.realestate_version .nav-pills > li:hover > a,
-body.realestate_version .nav-pills > li:focus > a,
-body.realestate_version .nav-pills > li.active > a,
-body.realestate_version .nav-pills > li.active > a:focus,
-body.realestate_version .nav-pills > li.active > a:hover,
-body.realestate_version .divider-bar,
-body.realestate_version .owl-next:hover i,
-body.realestate_version .owl-prev:hover i,
-body.realestate_version .icon-wrapper:hover i:hover,
 body.realestate_version .grd1:hover,
 body.realestate_version .grd1:focus {
     background-position: 100px;
@@ -78,11 +56,6 @@ body.realestate_version .effect-1:after {
 body.realestate_version .property-detail {
     text-align: center;
     cursor: pointer;
-}
-
-body.realestate_version .property-detail p.lead {
-    margin-bottom: 0;
-    padding-bottom: 0;
 }
 
 body.realestate_version .property-detail h4 {
@@ -235,44 +208,6 @@ body.realestate_version #map {
     z-index: 1;
 }
 
-body.realestate_version #map img {
-    max-width: inherit;
-}
-
-body.realestate_version .map {
-    position: relative;
-}
-
-body.realestate_version .map .row {
-    position: relative;
-}
-
-body.realestate_version .infobox img {
-    width: 100% !important;
-}
-
-body.realestate_version .map .searchmodule {
-    padding: 18px 10px;
-}
-
-body.realestate_version .infobox {
-    display: block;
-    margin: 0;
-    padding: 0 0 10px;
-    position: relative;
-    width: 260px;
-    z-index: 100;
-}
-
-body.realestate_version .infobox .title {
-    font-size: 13px;
-    line-height: 1;
-    margin-bottom: 0;
-    margin-top: 15px;
-    padding-bottom: 5px;
-    text-transform: capitalize;
-}
-
 body.realestate_version .desc h3 i {
     color: rgba(0, 0, 0, 0.1);
 }
@@ -281,8 +216,6 @@ body.realestate_version .testimonial h4 {
     color: #1f1f1f;
 }
 
-body.realestate_version .owl-next i,
-body.realestate_version .owl-prev i,
 body.realestate_version .desc {
     box-shadow: none !important;
     border: 0 !important;
