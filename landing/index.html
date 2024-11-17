@@ -27,6 +27,7 @@
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom-styles.css" />
     <!-- <link rel="stylesheet" href="css/custom.css" /> -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -34,48 +35,78 @@
     <![endif]-->
 
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-         const urlParams = new URLSearchParams(window.location.search);
-         const fbPixelId = urlParams.get('fbp');
-         const gAnalyticsId = urlParams.get('ggl');
-   
-         if (fbPixelId) {
-            !function(f,b,e,v,n,t,s) {
-               if(f.fbq)return; n=f.fbq=function(){n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)};
-               if(!f._fbq)f._fbq=n; n.push=n; n.loaded=!0; n.version='2.0'; n.queue=[]; t=b.createElement(e); t.async=!0;
-               t.src=v; s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);
-            }(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', fbPixelId);
-            fbq('track', 'PageView');
-         }
-   
-         if (gAnalyticsId) {
-            (function(i,s,o,g,r,a,m) {
-               i['GoogleAnalyticsObject']=r; i[r]=i[r] || function() {
-                  (i[r].q=i[r].q || []).push(arguments);
-               }, i[r].l=1*new Date(); a=s.createElement(o), m=s.getElementsByTagName(o)[0];
-               a.async=1; a.src=g; m.parentNode.insertBefore(a,m);
-            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-            ga('create', gAnalyticsId, 'auto');
-            ga('send', 'pageview');
-         }
-   
-         const forms = document.querySelectorAll('.my-form');
-         
-         forms.forEach((form) => {
-            form.addEventListener('submit', function(event) {
-               if (fbPixelId) {
-                  fbq('track', 'Lead'); 
-               }
-   
-               if (gAnalyticsId) {
-                 ga('send', 'event', 'Lead', 'Submit', 'Lead Form');
-               }
-            });
-         });
+      document.addEventListener("DOMContentLoaded", function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const fbPixelId = urlParams.get("fbp");
+        const gAnalyticsId = urlParams.get("ggl");
+
+        if (fbPixelId) {
+          !(function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+              n.callMethod
+                ? n.callMethod.apply(n, arguments)
+                : n.queue.push(arguments);
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = "2.0";
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s);
+          })(
+            window,
+            document,
+            "script",
+            "https://connect.facebook.net/en_US/fbevents.js"
+          );
+          fbq("init", fbPixelId);
+          fbq("track", "PageView");
+        }
+
+        if (gAnalyticsId) {
+          (function (i, s, o, g, r, a, m) {
+            i["GoogleAnalyticsObject"] = r;
+            (i[r] =
+              i[r] ||
+              function () {
+                (i[r].q = i[r].q || []).push(arguments);
+              }),
+              (i[r].l = 1 * new Date());
+            (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m);
+          })(
+            window,
+            document,
+            "script",
+            "https://www.google-analytics.com/analytics.js",
+            "ga"
+          );
+          ga("create", gAnalyticsId, "auto");
+          ga("send", "pageview");
+        }
+
+        const forms = document.querySelectorAll(".my-form");
+
+        forms.forEach((form) => {
+          form.addEventListener("submit", function (event) {
+            if (fbPixelId) {
+              fbq("track", "Lead");
+            }
+
+            if (gAnalyticsId) {
+              ga("send", "event", "Lead", "Submit", "Lead Form");
+            }
+          });
+        });
       });
-   </script>
-   
+    </script>
   </head>
   <body class="realestate_version">
     <!-- LOADER -->
@@ -154,54 +185,71 @@
               >
             </div>
           </div>
+          
           <div class="col-md-6 wow slideInRight hidden-xs hidden-sm">
+            <span class="loader"></span>
+            <div class="error-wrapper"></div>
             <div class="contact_form">
               <h3>
                 <i class="fa fa-envelope-o grd1 global-radius"></i> QUICK
                 APPOINTMENT
               </h3>
-              <form id="contactform1" class="row my-form" name="contactform" method="post">
+              <form
+                id="contactform1"
+                class="row my-form"
+                name="contactform"
+                method="post"
+              >
                 <fieldset class="row-fluid">
-                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <div
+                    class="col-lg-6 col-md-6 col-sm-6 col-xs-12 input-wrapper"
+                  >
                     <input
                       type="text"
-                      name="first_name1"
+                      name="first_name"
                       id="first_name1"
                       class="form-control"
                       placeholder="First Name"
                     />
+                    <div class="require-marker firstName-error-message">*</div>
                   </div>
-                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <div
+                    class="col-lg-6 col-md-6 col-sm-6 col-xs-12 input-wrapper"
+                  >
                     <input
                       type="text"
-                      name="last_name1"
+                      name="last_name"
                       id="last_name1"
                       class="form-control"
                       placeholder="Last Name"
                     />
+                    <div class="require-marker lastName-error-message">*</div>
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <input
                       type="email"
-                      name="email1"
+                      name="email"
                       id="email1"
                       class="form-control"
                       placeholder="Your Email"
                     />
                   </div>
-                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <div
+                    class="col-lg-6 col-md-6 col-sm-6 col-xs-12 input-wrapper"
+                  >
                     <input
-                      type="text"
-                      name="phone1"
+                      type="tel"
+                      name="phone"
                       id="phone1"
                       class="form-control"
                       placeholder="Your Phone"
                     />
+                    <div class="require-marker phone-error-message">*</div>
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <label class="sr-only">Select Time</label>
                     <select
-                      name="select_service1"
+                      name="select_service"
                       id="select_service1"
                       class="selectpicker form-control"
                       data-style="btn-white"
@@ -210,11 +258,12 @@
                       <option value="Weekdays">Weekdays</option>
                       <option value="Weekend">Weekend</option>
                     </select>
+                    <div class="require-marker time-error-message">*</div>
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <label class="sr-only">What is max price?</label>
                     <select
-                      name="select_price1"
+                      name="select_price"
                       id="select_price1"
                       class="selectpicker form-control"
                       data-style="btn-white"
@@ -225,8 +274,12 @@
                     </select>
                   </div>
                   <div
+                    style="position: relative"
                     class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center"
                   >
+                    <div class="required-field-message">
+                      * - required fields
+                    </div>
                     <button
                       type="submit"
                       value="SEND"
@@ -235,6 +288,7 @@
                     >
                       Get an Appointment
                     </button>
+                    
                   </div>
                 </fieldset>
               </form>
@@ -375,10 +429,7 @@
       <div class="sep1"></div>
     </div>
     <!-- end section -->
-    <div
-      id="agent"
-      class="parallax section db parallax-off"
-    >
+    <div id="agent" class="parallax section db parallax-off">
       <div class="container">
         <div class="section-title row text-center">
           <div class="col-md-8 col-md-offset-2">
@@ -677,12 +728,13 @@
         <!-- end title -->
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
+            <span class="loader"></span>
+            <div class="error-wrapper"></div>
             <div class="contact_form">
               <div id="message"></div>
               <form
                 id="contactform"
                 class="row my-form"
-                action="contact.php"
                 name="contactform"
                 method="post"
               >
@@ -695,6 +747,7 @@
                       class="form-control"
                       placeholder="First Name"
                     />
+                    <div class="require-marker firstName-error-message">*</div>
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <input
@@ -704,6 +757,7 @@
                       class="form-control"
                       placeholder="Last Name"
                     />
+                    <div class="require-marker lastName-error-message">*</div>
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <input
@@ -716,12 +770,18 @@
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <input
-                      type="text"
+                      type="tel"
                       name="phone"
                       id="phone"
                       class="form-control"
                       placeholder="Your Phone"
                     />
+                    <div
+                      class="require-marker phone-error-message"
+                      style="white-space: nowrap"
+                    >
+                      *
+                    </div>
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <label class="sr-only">Select Time</label>
@@ -735,6 +795,7 @@
                       <option value="Weekdays">Weekdays</option>
                       <option value="Weekend">Weekend</option>
                     </select>
+                    <div class="require-marker time-error-message">*</div>
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <label class="sr-only">What is max price?</label>
@@ -761,6 +822,9 @@
                   <div
                     class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center"
                   >
+                    <div class="required-field-message">
+                      * - required fields
+                    </div>
                     <button
                       type="submit"
                       value="SEND"
@@ -933,6 +997,60 @@
     <!-- MAP & CONTACT -->
     <script src="js/map.js"></script>
 
+    <script src="js/submitHandler.js"></script>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Функция для обработки события ввода
+        function handlePhoneInput(event) {
+          var phoneInput = event.target;
+
+          var inputValue = phoneInput.value;
+          var numericValue = inputValue.replace(/[^\d]/g, "");
+
+          if (!numericValue.startsWith("61")) {
+            numericValue = "61" + numericValue.substr(2);
+          }
+
+          phoneInput.value = "+" + numericValue;
+
+          if (numericValue.length < 11) {
+            phoneInput.setCustomValidity(
+              "The phone number must contain at least 11 digits."
+            );
+          } else {
+            phoneInput.setCustomValidity("");
+          }
+        }
+
+        // Функция для обработки события отправки формы
+        function handleFormSubmit(event) {
+          var phoneInput = event.target.querySelector('input[type="tel"]');
+          var numericValue = phoneInput.value.replace(/[^\d]/g, "");
+
+          if (numericValue.length < 11) {
+            event.preventDefault();
+            alert("The phone number must contain at least 11 digits.");
+          }
+        }
+
+        // Находим все формы на странице
+        var forms = document.querySelectorAll("form");
+
+        // Обходим все формы
+        forms.forEach(function (form) {
+          form.addEventListener("submit", handleFormSubmit);
+
+          // Находим все поля ввода телефонных номеров в каждой форме
+          var phoneInputs = form.querySelectorAll('input[type="tel"]');
+
+          // Обходим все поля ввода телефонных номеров и добавляем обработчик события ввода
+          phoneInputs.forEach(function (phoneInput) {
+            phoneInput.value = "+61"; // Устанавливаем начальное значение
+            phoneInput.addEventListener("input", handlePhoneInput);
+          });
+        });
+      });
+    </script>
   </body>
 </html>
