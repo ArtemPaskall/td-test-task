@@ -98,7 +98,7 @@ document.querySelectorAll(".my-form").forEach((form) => {
     function createErrorMessage(container, message) {
       const errorMessage = document.createElement("div");
       errorMessage.classList.add("error-message");
-      errorMessage.innerHTML = message;
+      errorMessage.textContent = message;
       container.appendChild(errorMessage);
     }
 
@@ -140,7 +140,7 @@ document.querySelectorAll(".my-form").forEach((form) => {
         spinerToggle("off");
 
         errorContainers.forEach((container) => {
-          container.innerHTML = "";
+          container.textContent = "";
         });
 
         errorContainers.forEach((container) => {
@@ -174,7 +174,7 @@ document.querySelectorAll(".my-form").forEach((form) => {
     } catch (error) {
       spinerToggle("off");
       errorContainers.forEach((container) => {
-        container.innerHTML = "";
+        container.textContent = "";
         container.style.display = "flex";
 
         createErrorMessage(container, "Error sending data. Try again later.");
