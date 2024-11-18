@@ -194,7 +194,7 @@ $csrfToken = $_SESSION['csrf_token'];
               >
             </div>
           </div>
-          
+
           <div class="col-md-6 wow slideInRight hidden-xs hidden-sm">
             <span class="loader"></span>
             <div class="error-wrapper"></div>
@@ -210,7 +210,11 @@ $csrfToken = $_SESSION['csrf_token'];
                 method="post"
               >
                 <fieldset class="row-fluid">
-                <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+                  <input
+                    type="hidden"
+                    name="csrf_token"
+                    value="<?php echo $_SESSION['csrf_token']; ?>"
+                  />
                   <div
                     class="col-lg-6 col-md-6 col-sm-6 col-xs-12 input-wrapper"
                   >
@@ -298,7 +302,6 @@ $csrfToken = $_SESSION['csrf_token'];
                     >
                       Get an Appointment
                     </button>
-                    
                   </div>
                 </fieldset>
               </form>
@@ -743,6 +746,11 @@ $csrfToken = $_SESSION['csrf_token'];
                 method="post"
               >
                 <fieldset class="row-fluid">
+                <input
+                    type="hidden"
+                    name="csrf_token"
+                    value="<?php echo $_SESSION['csrf_token']; ?>"
+                  />
                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <input
                       type="text"

@@ -114,7 +114,7 @@ document.querySelectorAll(".my-form").forEach((form) => {
       });
     }
 
-    formOpacity('0.5');
+    formOpacity("0.5");
     spinerToggle("on");
 
     const errorContainers = document.querySelectorAll(".error-wrapper");
@@ -181,9 +181,8 @@ document.querySelectorAll(".my-form").forEach((form) => {
         createSkipErrorButton(container);
       });
     } finally {
-      formOpacity('1')
+      formOpacity("1");
       spinerToggle("off");
     }
   });
 });
-
