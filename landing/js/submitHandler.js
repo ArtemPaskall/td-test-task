@@ -125,7 +125,13 @@ document.querySelectorAll(".my-form").forEach((form) => {
         method: "POST",
         body: formData,
       });
+
+      if (!response.ok) {
+        console.log(response);
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
       const result = await response.json();
+      console.log(result);
       if (result.status === "success") {
         window.location.href = result.redirectUrl;
       } else {
@@ -168,7 +174,7 @@ document.querySelectorAll(".my-form").forEach((form) => {
       errorContainers.forEach((container) => {
         container.innerHTML = "";
         container.style.display = "flex";
-       
+
         createErrorMessage(container, "Error sending data. Try again later.");
         createSkipErrorButton(container);
       });
@@ -178,3 +184,4 @@ document.querySelectorAll(".my-form").forEach((form) => {
     }
   });
 });
+
