@@ -1,3 +1,12 @@
+<?php
+// Генерація CSRF-токену
+session_start();
+if (empty($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
+$csrfToken = $_SESSION['csrf_token'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <!-- Basic --><head>
@@ -201,6 +210,7 @@
                 method="post"
               >
                 <fieldset class="row-fluid">
+                <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
                   <div
                     class="col-lg-6 col-md-6 col-sm-6 col-xs-12 input-wrapper"
                   >
@@ -983,7 +993,7 @@
     <script src="js/hoverdir.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
     <!-- MAP & CONTACT -->
-    <script src="js/map.js"></script>
+    <script async src="js/map.js"></script>
 
     <script src="js/submitHandler.js"></script>
 

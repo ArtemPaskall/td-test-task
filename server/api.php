@@ -1,4 +1,5 @@
 <?php
+session_start();
 // Включаємо налаштування для обробки помилок
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
@@ -65,6 +66,16 @@ try {
 
 // Обробка POST-запитів
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $csrfToken = $_POST['csrf_token'] ?? '';
+
+    if (empty($csrfToken) || $csrfToken !== ($_SESSION['csrf_token'] ?? '')) {
+        echo json_encode(['status' => 'error', 'message' => 'Invalid CSRF token.']);
+        exit;
+    }
+
+    // Оновлюємо токен після успішної перевірки
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+
     $errors = [];
     $firstName = trim($_POST['first_name'] ?? '');
     $lastName = trim($_POST['last_name'] ?? '');

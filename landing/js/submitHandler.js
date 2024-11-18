@@ -127,7 +127,6 @@ document.querySelectorAll(".my-form").forEach((form) => {
       });
 
       if (!response.ok) {
-        console.log(response);
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       const result = await response.json();

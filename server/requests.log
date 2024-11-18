@@ -1,16 +1,16 @@
-[2024-11-17 19:04:10] {
+[2024-11-18 15:35:40] {
     "Request": {
         "method": "POST",
         "headers": {
             "Host": "localhost",
             "Connection": "keep-alive",
-            "Content-Length": "799",
+            "Content-Length": "848",
             "Pragma": "no-cache",
             "Cache-Control": "no-cache",
             "sec-ch-ua-platform": "\"Windows\"",
             "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
             "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryoUDVi6mIegy6JPeC",
+            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryEO2wCERFETNjFcZN",
             "sec-ch-ua-mobile": "?0",
             "Accept": "*\/*",
             "Origin": "http:\/\/localhost",
@@ -19,376 +19,15 @@
             "Sec-Fetch-Dest": "empty",
             "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
             "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
+            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6",
+            "Cookie": "PHPSESSID=0d0c7287eb4246d99b9b4515b2619105"
         },
         "body": {
+            "csrf_token": "8360514819a051df0661c88ddb6d59a5174e76a2a4190ebaca17bc54d7e42883",
             "first_name": "Artem",
             "last_name": "Paskal",
             "email": "ArtemPasskal@gmail.com",
-            "phone": "+6139282088888888888",
-            "select_service": "Weekdays",
-            "select_price": "$100 - $2000",
-            "comments": "8888888888"
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-17 19:04:10] {
-    "Response": {
-        "status": "error",
-        "message": "Invalid request method."
-    }
-}
-[2024-11-18 07:54:59] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "783",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryQreH6Ok1llT5r0Ts",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+6139282088999",
-            "select_service": "Weekdays",
-            "select_price": "$100 - $2000",
-            "comments": ""
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 07:54:59] {
-    "Response": {
-        "status": "success",
-        "redirectUrl": "success_page.php"
-    }
-}
-[2024-11-18 07:55:10] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "783",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryfkocll0MygE7GBX9",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+6139282088999",
-            "select_service": "Weekdays",
-            "select_price": "$100 - $2000",
-            "comments": ""
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 07:55:10] {
-    "Response": {
-        "status": "success",
-        "redirectUrl": "success_page.php"
-    }
-}
-[2024-11-18 09:42:27] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "688",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryuFBxZi2VKt0817BX",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+61392820884444",
-            "select_service": "Weekend",
-            "select_price": "$100 - $2000"
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 09:42:27] {
-    "Response": {
-        "status": "success",
-        "redirectUrl": "success_page.php"
-    }
-}
-[2024-11-18 09:42:54] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "691",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryxkZhcFP3BhfAesMg",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+6139282044444488",
+            "phone": "+613928208899",
             "select_service": "Weekdays",
             "select_price": "$100 - $2000"
         },
@@ -445,25 +84,25 @@
         }
     }
 }
-[2024-11-18 09:42:54] {
+[2024-11-18 15:35:40] {
     "Response": {
-        "status": "error",
-        "message": "Database error: SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: users.email"
+        "status": "success",
+        "redirectUrl": "success_page.php"
     }
 }
-[2024-11-18 09:43:22] {
+[2024-11-18 15:36:00] {
     "Request": {
         "method": "POST",
         "headers": {
             "Host": "localhost",
             "Connection": "keep-alive",
-            "Content-Length": "689",
+            "Content-Length": "850",
             "Pragma": "no-cache",
             "Cache-Control": "no-cache",
             "sec-ch-ua-platform": "\"Windows\"",
             "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
             "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryme5gYvUBegQ3CrfV",
+            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryGk5IC2bPzTJ3tVBL",
             "sec-ch-ua-mobile": "?0",
             "Accept": "*\/*",
             "Origin": "http:\/\/localhost",
@@ -472,782 +111,19 @@
             "Sec-Fetch-Dest": "empty",
             "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
             "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
+            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6",
+            "Cookie": "PHPSESSID=0d0c7287eb4246d99b9b4515b2619105"
         },
         "body": {
+            "csrf_token": "12de5970fb0b232b9c75e1bd401710e8dd14e1d490aee8fe80128151c818946f",
             "first_name": "Artem",
             "last_name": "Paskal",
             "email": "ArtemPasskal@gmail.com",
-            "phone": "+61392820884444",
+            "phone": "+613928208822",
             "select_service": "Weekdays",
-            "select_price": "$100 - $2000"
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 09:43:22] {
-    "Response": {
-        "status": "success",
-        "redirectUrl": "success_page.php"
-    }
-}
-[2024-11-18 09:43:31] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "689",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundarybrHizCljsvrHwwpC",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+61392820884444",
-            "select_service": "Weekdays",
-            "select_price": "$100 - $2000"
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 09:43:31] {
-    "Response": {
-        "status": "success",
-        "redirectUrl": "success_page.php"
-    }
-}
-[2024-11-18 09:43:38] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "689",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryH9ZEfMiNeiqJrBtz",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+61392820884444",
-            "select_service": "Weekdays",
-            "select_price": "$100 - $2000"
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 09:43:38] {
-    "Response": {
-        "status": "success",
-        "redirectUrl": "success_page.php"
-    }
-}
-[2024-11-18 09:47:18] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "806",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryAM4pAo1iG27w7e8a",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "77777777777skal@gmail.com",
-            "phone": "+61392820887777",
-            "select_service": "Weekdays",
-            "select_price": "$2000 - $4000",
-            "comments": "344444444444444444"
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 09:47:18] {
-    "Response": {
-        "status": "success",
-        "redirectUrl": "success_page.php"
-    }
-}
-[2024-11-18 09:48:24] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "807",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryhzpVNhq3XlLtlBD2",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "77777777777skal@gmail.com",
-            "phone": "+61392820887777",
-            "select_service": "Weekdays",
-            "select_price": "$4000 - $10000",
-            "comments": "344444444444444444"
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 09:48:24] {
-    "Response": {
-        "status": "success",
-        "redirectUrl": "success_page.php"
-    }
-}
-[2024-11-18 09:49:57] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "786",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryvVhQskmMMXD57t9e",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "88888al@gmail.com",
-            "phone": "+61392820887777",
-            "select_service": "Weekdays",
-            "select_price": "$4000 - $10000",
-            "comments": "99999"
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 09:49:57] {
-    "Response": {
-        "status": "success",
-        "redirectUrl": "success_page.php"
-    }
-}
-[2024-11-18 09:50:14] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "786",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryFu3MgzXIcgqDoTSw",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "88888al@gmail.com",
-            "phone": "+61392820887777",
-            "select_service": "Weekdays",
-            "select_price": "$4000 - $10000",
-            "comments": "99999"
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 09:50:14] {
-    "Response": {
-        "status": "success",
-        "redirectUrl": "success_page.php"
-    }
-}
-[2024-11-18 09:50:52] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "787",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryjVOlsNAA36DaNdSe",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "8888888skal@gmail.com",
-            "phone": "+61392820889999",
-            "select_service": "Weekdays",
-            "select_price": "$100 - $2000",
-            "comments": "9999"
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 09:50:52] {
-    "Response": {
-        "status": "success",
-        "redirectUrl": "success_page.php"
-    }
-}
-[2024-11-18 12:56:18] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "690",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryU0iEgYZCVq4GGCER",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+61392820877778",
-            "select_service": "Weekend",
             "select_price": "$4000 - $10000"
         },
         "ip": "::1",
-        "geoData": null
-    }
-}
-[2024-11-18 12:56:18] {
-    "Response": {
-        "status": "error",
-        "message": "Database error: SQLSTATE[HY000]: General error: 1 no such table: users"
-    }
-}
-[2024-11-18 12:59:50] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "786",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryAzbSh3U19BbB3ihA",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+6139282088333",
-            "select_service": "Weekend",
-            "select_price": "$100 - $2000",
-            "comments": "3333"
-        },
-        "ip": "::1",
         "geoData": {
             "ip": "8.8.8.8",
             "hostname": "dns.google",
@@ -1300,23 +176,25 @@
         }
     }
 }
-[2024-11-18 12:59:50] {
+[2024-11-18 15:36:00] {
     "Response": {
         "status": "success",
         "redirectUrl": "success_page.php"
     }
 }
-[2024-11-18 13:03:10] {
+[2024-11-18 15:36:16] {
     "Request": {
         "method": "POST",
         "headers": {
             "Host": "localhost",
             "Connection": "keep-alive",
-            "Content-Length": "783",
+            "Content-Length": "850",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
             "sec-ch-ua-platform": "\"Windows\"",
             "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
             "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundary2PBz4FUWMIit6RWP",
+            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryEdTqOCIXui4FCwgB",
             "sec-ch-ua-mobile": "?0",
             "Accept": "*\/*",
             "Origin": "http:\/\/localhost",
@@ -1325,16 +203,17 @@
             "Sec-Fetch-Dest": "empty",
             "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
             "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
+            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6",
+            "Cookie": "PHPSESSID=0d0c7287eb4246d99b9b4515b2619105"
         },
         "body": {
+            "csrf_token": "eb9735d6b797d4aa4eeaedeb6a4e4107f1982c9a9c0e7127500299d72f6ae6de",
             "first_name": "Artem",
-            "last_name": "111111",
-            "email": "333333@gmail.com",
-            "phone": "+6139282088333",
+            "last_name": "Paskal",
+            "email": "ArtemPasskal@gmail.com",
+            "phone": "+613928208822",
             "select_service": "Weekdays",
-            "select_price": "$100 - $2000",
-            "comments": "111111"
+            "select_price": "$4000 - $10000"
         },
         "ip": "::1",
         "geoData": {
@@ -1389,23 +268,25 @@
         }
     }
 }
-[2024-11-18 13:03:10] {
+[2024-11-18 15:36:16] {
     "Response": {
         "status": "success",
         "redirectUrl": "success_page.php"
     }
 }
-[2024-11-18 13:03:24] {
+[2024-11-18 15:36:36] {
     "Request": {
         "method": "POST",
         "headers": {
             "Host": "localhost",
             "Connection": "keep-alive",
-            "Content-Length": "784",
+            "Content-Length": "850",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
             "sec-ch-ua-platform": "\"Windows\"",
             "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
             "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryoQjofB0pq3It6SVx",
+            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryrwcI2HCPn9JUUANA",
             "sec-ch-ua-mobile": "?0",
             "Accept": "*\/*",
             "Origin": "http:\/\/localhost",
@@ -1414,16 +295,17 @@
             "Sec-Fetch-Dest": "empty",
             "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
             "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
+            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6",
+            "Cookie": "PHPSESSID=0d0c7287eb4246d99b9b4515b2619105"
         },
         "body": {
+            "csrf_token": "2de846253bf748c57f050e7f988ea2b57557e89a6cc623147726eb04b3a66a85",
             "first_name": "Artem",
-            "last_name": "111111",
-            "email": "333333@gmail.com",
-            "phone": "+61392888888888",
+            "last_name": "Paskal",
+            "email": "ArtemPasskal@gmail.com",
+            "phone": "+613928208822",
             "select_service": "Weekdays",
-            "select_price": "$100 - $2000",
-            "comments": "111111"
+            "select_price": "$4000 - $10000"
         },
         "ip": "::1",
         "geoData": {
@@ -1478,25 +360,25 @@
         }
     }
 }
-[2024-11-18 13:03:24] {
+[2024-11-18 15:36:36] {
     "Response": {
         "status": "success",
         "redirectUrl": "success_page.php"
     }
 }
-[2024-11-18 13:05:31] {
+[2024-11-18 15:49:03] {
     "Request": {
         "method": "POST",
         "headers": {
             "Host": "localhost",
             "Connection": "keep-alive",
-            "Content-Length": "688",
+            "Content-Length": "848",
             "Pragma": "no-cache",
             "Cache-Control": "no-cache",
             "sec-ch-ua-platform": "\"Windows\"",
             "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
             "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryqdZrfX4rilAbcJEY",
+            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryuLwmkEk5OhuVCLyx",
             "sec-ch-ua-mobile": "?0",
             "Accept": "*\/*",
             "Origin": "http:\/\/localhost",
@@ -1505,1916 +387,15 @@
             "Sec-Fetch-Dest": "empty",
             "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
             "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
+            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6",
+            "Cookie": "PHPSESSID=0d0c7287eb4246d99b9b4515b2619105"
         },
         "body": {
+            "csrf_token": "472c134125c6decb260ff913d50242f0235806b3ef3c3814ac3c7184f64036ab",
             "first_name": "Artem",
             "last_name": "Paskal",
             "email": "ArtemPasskal@gmail.com",
-            "phone": "+6139282088999",
-            "select_service": "Weekend",
-            "select_price": "$2000 - $4000"
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 13:05:31] {
-    "Response": {
-        "status": "error",
-        "message": "Database error: SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: users.email"
-    }
-}
-[2024-11-18 13:06:21] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "691",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryBhcYgxgyGTS4xgJm",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+613928208899955",
-            "select_service": "Weekdays",
-            "select_price": "$2000 - $4000"
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 13:06:21] {
-    "Response": {
-        "status": "error",
-        "message": "Database error: SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: users.email"
-    }
-}
-[2024-11-18 13:06:54] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "790",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryZ16BowEhYN1YnQHh",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+61392820888888",
-            "select_service": "Weekdays",
-            "select_price": "$100 - $2000",
-            "comments": "969999"
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 13:06:54] {
-    "Response": {
-        "status": "error",
-        "message": "Database error: SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: users.email"
-    }
-}
-[2024-11-18 13:10:29] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "790",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundary5zC8xsRjZpozIUUY",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+61392820888888",
-            "select_service": "Weekdays",
-            "select_price": "$100 - $2000",
-            "comments": "969999"
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 13:10:29] {
-    "Response": {
-        "status": "error",
-        "message": "Database error: SQLSTATE[HY000]: General error: 1 no such table: users"
-    }
-}
-[2024-11-18 13:10:35] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "790",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryhsUlTqk4zP0NEh6D",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+61392820888888",
-            "select_service": "Weekdays",
-            "select_price": "$100 - $2000",
-            "comments": "969999"
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 13:10:35] {
-    "Response": {
-        "status": "error",
-        "message": "Database error: SQLSTATE[HY000]: General error: 1 no such table: users"
-    }
-}
-[2024-11-18 13:12:03] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "783",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryrJzjWsBxeN53jXyE",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+6139282088999",
-            "select_service": "Weekdays",
-            "select_price": "$100 - $2000",
-            "comments": ""
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 13:12:03] {
-    "Response": {
-        "status": "error",
-        "message": "Database error: SQLSTATE[HY000]: General error: 1 no such table: users"
-    }
-}
-[2024-11-18 13:12:16] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "687",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryjmKDr93pZQE8vYFi",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+6139282088999",
-            "select_service": "Weekend",
-            "select_price": "$100 - $2000"
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 13:12:16] {
-    "Response": {
-        "status": "error",
-        "message": "Database error: SQLSTATE[HY000]: General error: 1 no such table: users"
-    }
-}
-[2024-11-18 13:14:35] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "783",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryBtYnqCy1pfvTr6Mn",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+6139282088999",
-            "select_service": "Weekdays",
-            "select_price": "$100 - $2000",
-            "comments": ""
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 13:14:35] {
-    "Response": {
-        "status": "error",
-        "message": "Database error: SQLSTATE[HY000]: General error: 1 no such table: users"
-    }
-}
-[2024-11-18 13:15:23] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "783",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryEZcpwmuAynzpsNg4",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+6139282088888",
-            "select_service": "Weekdays",
-            "select_price": "$100 - $2000",
-            "comments": ""
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 13:15:23] {
-    "Response": {
-        "status": "error",
-        "message": "Database error: SQLSTATE[HY000]: General error: 1 no such table: users"
-    }
-}
-[2024-11-18 13:17:30] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "784",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryJWpmp35jCBTt3pdK",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+61392820889999",
-            "select_service": "Weekdays",
-            "select_price": "$100 - $2000",
-            "comments": ""
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 13:17:30] {
-    "Response": {
-        "status": "error",
-        "message": "Database error: SQLSTATE[HY000]: General error: 1 no such table: users"
-    }
-}
-[2024-11-18 13:17:57] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "687",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryNib8BN2MuKIHthUX",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+6139282088999",
-            "select_service": "Weekend",
-            "select_price": "$100 - $2000"
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 13:17:57] {
-    "Response": {
-        "status": "error",
-        "message": "Database error: SQLSTATE[HY000]: General error: 1 no such table: users"
-    }
-}
-[2024-11-18 13:18:40] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "687",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryQBcOywvNBnnSMaOh",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+6139282088999",
-            "select_service": "Weekend",
-            "select_price": "$100 - $2000"
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 13:18:40] {
-    "Response": {
-        "status": "error",
-        "message": "Database error: SQLSTATE[HY000]: General error: 1 no such table: users"
-    }
-}
-[2024-11-18 13:18:58] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "784",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryGdrjoCUpACGMDmbs",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+61392820888888",
-            "select_service": "Weekdays",
-            "select_price": "$100 - $2000",
-            "comments": ""
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 13:18:58] {
-    "Response": {
-        "status": "error",
-        "message": "Database error: SQLSTATE[HY000]: General error: 1 no such table: users"
-    }
-}
-[2024-11-18 13:19:32] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "784",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryzfTLI7oQxkLm7o9s",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+61392820888888",
-            "select_service": "Weekdays",
-            "select_price": "$100 - $2000",
-            "comments": ""
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 13:19:32] {
-    "Response": {
-        "status": "error",
-        "message": "Database error: SQLSTATE[HY000]: General error: 1 no such table: users"
-    }
-}
-[2024-11-18 13:19:44] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "687",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryR9dWfDtCjCmjDo6F",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+6139282088888",
-            "select_service": "Weekend",
-            "select_price": "$100 - $2000"
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 13:19:44] {
-    "Response": {
-        "status": "error",
-        "message": "Database error: SQLSTATE[HY000]: General error: 1 no such table: users"
-    }
-}
-[2024-11-18 13:20:00] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "687",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryBQtvGTbTwBmlLtAb",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+6139282088888",
-            "select_service": "Weekend",
-            "select_price": "$100 - $2000"
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 13:20:00] {
-    "Response": {
-        "status": "error",
-        "message": "Database error: SQLSTATE[HY000]: General error: 1 no such table: users"
-    }
-}
-[2024-11-18 13:20:06] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "784",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryJK23aB7ysi7dQpr0",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+61392820888888",
-            "select_service": "Weekdays",
-            "select_price": "$100 - $2000",
-            "comments": ""
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 13:20:06] {
-    "Response": {
-        "status": "error",
-        "message": "Database error: SQLSTATE[HY000]: General error: 1 no such table: users"
-    }
-}
-[2024-11-18 13:24:02] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "687",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryuRUQX1tkPJoTf3t2",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+6139282088888",
-            "select_service": "Weekend",
-            "select_price": "$100 - $2000"
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 13:24:02] {
-    "Response": {
-        "status": "success",
-        "redirectUrl": "success_page.php"
-    }
-}
-[2024-11-18 13:24:24] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "790",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryYBCfYXGY0qRblWK9",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+61392820888888",
-            "select_service": "Weekdays",
-            "select_price": "$100 - $2000",
-            "comments": "555555"
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 13:24:24] {
-    "Response": {
-        "status": "success",
-        "redirectUrl": "success_page.php"
-    }
-}
-[2024-11-18 13:24:51] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "790",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundarytXlGEsVWVnFtObo6",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+61392820888888",
-            "select_service": "Weekdays",
-            "select_price": "$100 - $2000",
-            "comments": "555555"
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 13:24:51] {
-    "Response": {
-        "status": "success",
-        "redirectUrl": "success_page.php"
-    }
-}
-[2024-11-18 13:25:36] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "783",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundarykv7fu7VLwIjGkg5V",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+6139282088888",
-            "select_service": "Weekdays",
-            "select_price": "$100 - $2000",
-            "comments": ""
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 13:25:36] {
-    "Response": {
-        "status": "success",
-        "redirectUrl": "success_page.php"
-    }
-}
-[2024-11-18 13:26:12] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "688",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryJF1ZEafdh5kIJpCa",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+6139282088666",
+            "phone": "+613928208888",
             "select_service": "Weekdays",
             "select_price": "$100 - $2000"
         },
@@ -3471,25 +452,25 @@
         }
     }
 }
-[2024-11-18 13:26:12] {
+[2024-11-18 15:49:03] {
     "Response": {
         "status": "success",
         "redirectUrl": "success_page.php"
     }
 }
-[2024-11-18 13:36:11] {
+[2024-11-18 18:11:51] {
     "Request": {
         "method": "POST",
         "headers": {
             "Host": "localhost",
             "Connection": "keep-alive",
-            "Content-Length": "687",
+            "Content-Length": "847",
             "Pragma": "no-cache",
             "Cache-Control": "no-cache",
             "sec-ch-ua-platform": "\"Windows\"",
             "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
             "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryXjI2IAFgr0165BYT",
+            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryNr7QB9LLrJ9UNRSo",
             "sec-ch-ua-mobile": "?0",
             "Accept": "*\/*",
             "Origin": "http:\/\/localhost",
@@ -3498,13 +479,15 @@
             "Sec-Fetch-Dest": "empty",
             "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
             "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
+            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6",
+            "Cookie": "PHPSESSID=0d0c7287eb4246d99b9b4515b2619105"
         },
         "body": {
+            "csrf_token": "1bcda6c9f668a507fd287616f463ce74ab12827cc09ed8a65409e61ff54ddd29",
             "first_name": "Artem",
             "last_name": "Paskal",
             "email": "ArtemPasskal@gmail.com",
-            "phone": "+6139282088555",
+            "phone": "+613928208811",
             "select_service": "Weekend",
             "select_price": "$100 - $2000"
         },
@@ -3561,25 +544,25 @@
         }
     }
 }
-[2024-11-18 13:36:12] {
+[2024-11-18 18:11:51] {
     "Response": {
         "status": "success",
         "redirectUrl": "success_page.php"
     }
 }
-[2024-11-18 13:37:27] {
+[2024-11-18 18:12:12] {
     "Request": {
         "method": "POST",
         "headers": {
             "Host": "localhost",
             "Connection": "keep-alive",
-            "Content-Length": "800",
+            "Content-Length": "847",
             "Pragma": "no-cache",
             "Cache-Control": "no-cache",
             "sec-ch-ua-platform": "\"Windows\"",
             "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
             "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryV9WpkYCFdl0F0enB",
+            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundarySQtJIBB39G7PPv0m",
             "sec-ch-ua-mobile": "?0",
             "Accept": "*\/*",
             "Origin": "http:\/\/localhost",
@@ -3588,198 +571,17 @@
             "Sec-Fetch-Dest": "empty",
             "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
             "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
+            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6",
+            "Cookie": "PHPSESSID=0d0c7287eb4246d99b9b4515b2619105"
         },
         "body": {
+            "csrf_token": "e56e15ff1680f8a47343b06249d40110ea0ed79f49d55abafab1c4ba3314891a",
             "first_name": "Artem",
             "last_name": "Paskal",
             "email": "ArtemPasskal@gmail.com",
-            "phone": "+613928208811111",
-            "select_service": "Weekdays",
-            "select_price": "$100 - $2000",
-            "comments": "sdfgsdfgsdgsdsd"
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 13:37:27] {
-    "Response": {
-        "status": "success",
-        "redirectUrl": "success_page.php"
-    }
-}
-[2024-11-18 13:37:47] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "800",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryrk8RNyAayQAaZ0al",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+613928208811111",
-            "select_service": "Weekdays",
-            "select_price": "$100 - $2000",
-            "comments": "sdfgsdfgsdgsdsd"
-        },
-        "ip": "::1",
-        "geoData": {
-            "ip": "8.8.8.8",
-            "hostname": "dns.google",
-            "anycast": true,
-            "city": "Mountain View",
-            "region": "California",
-            "country": "US",
-            "loc": "37.4056,-122.0775",
-            "postal": "94043",
-            "timezone": "America\/Los_Angeles",
-            "asn": {
-                "asn": "AS15169",
-                "name": "Google LLC",
-                "domain": "google.com",
-                "route": "8.8.8.0\/24",
-                "type": "hosting"
-            },
-            "company": {
-                "name": "Google LLC",
-                "domain": "google.com",
-                "type": "hosting"
-            },
-            "privacy": {
-                "vpn": false,
-                "proxy": false,
-                "tor": false,
-                "relay": false,
-                "hosting": true,
-                "service": ""
-            },
-            "abuse": {
-                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
-                "country": "US",
-                "email": "network-abuse@google.com",
-                "name": "Abuse",
-                "network": "8.8.8.0\/24",
-                "phone": "+1-650-253-0000"
-            },
-            "domains": {
-                "ip": "8.8.8.8",
-                "total": 10821,
-                "domains": [
-                    "hdchina.org",
-                    "musicool.cn",
-                    "allnet.cn",
-                    "aonode.com",
-                    "didifilm.com"
-                ]
-            }
-        }
-    }
-}
-[2024-11-18 13:37:47] {
-    "Response": {
-        "status": "success",
-        "redirectUrl": "success_page.php"
-    }
-}
-[2024-11-18 13:38:04] {
-    "Request": {
-        "method": "POST",
-        "headers": {
-            "Host": "localhost",
-            "Connection": "keep-alive",
-            "Content-Length": "795",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
-            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
-            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryvYKtEogDB3VPAUWL",
-            "sec-ch-ua-mobile": "?0",
-            "Accept": "*\/*",
-            "Origin": "http:\/\/localhost",
-            "Sec-Fetch-Site": "same-origin",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Dest": "empty",
-            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6"
-        },
-        "body": {
-            "first_name": "Artem",
-            "last_name": "Paskal",
-            "email": "ArtemPasskal@gmail.com",
-            "phone": "+61392820889999999",
+            "phone": "+613928208822",
             "select_service": "Weekend",
-            "select_price": "$100 - $2000",
-            "comments": "999999999"
+            "select_price": "$100 - $2000"
         },
         "ip": "::1",
         "geoData": {
@@ -3834,7 +636,99 @@
         }
     }
 }
-[2024-11-18 13:38:04] {
+[2024-11-18 18:12:12] {
+    "Response": {
+        "status": "success",
+        "redirectUrl": "success_page.php"
+    }
+}
+[2024-11-18 18:12:17] {
+    "Request": {
+        "method": "POST",
+        "headers": {
+            "Host": "localhost",
+            "Connection": "keep-alive",
+            "Content-Length": "847",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
+            "sec-ch-ua-platform": "\"Windows\"",
+            "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+            "Content-Type": "multipart\/form-data; boundary=----WebKitFormBoundaryds7PSEGfq9FBhmLI",
+            "sec-ch-ua-mobile": "?0",
+            "Accept": "*\/*",
+            "Origin": "http:\/\/localhost",
+            "Sec-Fetch-Site": "same-origin",
+            "Sec-Fetch-Mode": "cors",
+            "Sec-Fetch-Dest": "empty",
+            "Referer": "http:\/\/localhost\/td-test-task\/landing\/",
+            "Accept-Encoding": "gzip, deflate, br, zstd",
+            "Accept-Language": "uk,uk-UA;q=0.9,en-US;q=0.8,en;q=0.7,ru;q=0.6",
+            "Cookie": "PHPSESSID=0d0c7287eb4246d99b9b4515b2619105"
+        },
+        "body": {
+            "csrf_token": "fd84186d2622d86fefddda191be1adaa03486ae68396225fd681d0798971dcf3",
+            "first_name": "Artem",
+            "last_name": "Paskal",
+            "email": "ArtemPasskal@gmail.com",
+            "phone": "+613928208822",
+            "select_service": "Weekend",
+            "select_price": "$100 - $2000"
+        },
+        "ip": "::1",
+        "geoData": {
+            "ip": "8.8.8.8",
+            "hostname": "dns.google",
+            "anycast": true,
+            "city": "Mountain View",
+            "region": "California",
+            "country": "US",
+            "loc": "37.4056,-122.0775",
+            "postal": "94043",
+            "timezone": "America\/Los_Angeles",
+            "asn": {
+                "asn": "AS15169",
+                "name": "Google LLC",
+                "domain": "google.com",
+                "route": "8.8.8.0\/24",
+                "type": "hosting"
+            },
+            "company": {
+                "name": "Google LLC",
+                "domain": "google.com",
+                "type": "hosting"
+            },
+            "privacy": {
+                "vpn": false,
+                "proxy": false,
+                "tor": false,
+                "relay": false,
+                "hosting": true,
+                "service": ""
+            },
+            "abuse": {
+                "address": "US, CA, Mountain View, 1600 Amphitheatre Parkway, 94043",
+                "country": "US",
+                "email": "network-abuse@google.com",
+                "name": "Abuse",
+                "network": "8.8.8.0\/24",
+                "phone": "+1-650-253-0000"
+            },
+            "domains": {
+                "ip": "8.8.8.8",
+                "total": 10821,
+                "domains": [
+                    "hdchina.org",
+                    "musicool.cn",
+                    "allnet.cn",
+                    "aonode.com",
+                    "didifilm.com"
+                ]
+            }
+        }
+    }
+}
+[2024-11-18 18:12:17] {
     "Response": {
         "status": "success",
         "redirectUrl": "success_page.php"
