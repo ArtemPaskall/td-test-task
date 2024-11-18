@@ -95,7 +95,7 @@
         const forms = document.querySelectorAll(".my-form");
 
         forms.forEach((form) => {
-          form.addEventListener("submit", function (event) {
+          form.addEventListener("success", function (event) {
             if (fbPixelId) {
               fbq("track", "Lead");
             }

@@ -81,10 +81,10 @@ document.querySelectorAll(".my-form").forEach((form) => {
       return;
     }
 
-    function shadowForm(opacity) {
-      const shadow = document.querySelectorAll(".contact_form ");
-      shadow.forEach((e) => {
-        e.style.opacity = opacity;
+    function formOpacity(opacity) {
+      const forms = document.querySelectorAll(".contact_form");
+      forms.forEach((form) => {
+        form.style.opacity = opacity;
       });
     }
 
@@ -110,11 +110,11 @@ document.querySelectorAll(".my-form").forEach((form) => {
 
       skipErrorMessageButton.addEventListener("click", function () {
         container.style.display = "none";
-        shadowForm("100%");
+        formOpacity("100%");
       });
     }
 
-    shadowForm("70%");
+    formOpacity('0.5');
     spinerToggle("on");
 
     const errorContainers = document.querySelectorAll(".error-wrapper");
@@ -133,6 +133,9 @@ document.querySelectorAll(".my-form").forEach((form) => {
       const result = await response.json();
       console.log(result);
       if (result.status === "success") {
+        const successEvent = new Event("success");
+        form.dispatchEvent(successEvent);
+
         window.location.href = result.redirectUrl;
       } else {
         spinerToggle("off");
@@ -179,8 +182,8 @@ document.querySelectorAll(".my-form").forEach((form) => {
         createSkipErrorButton(container);
       });
     } finally {
+      formOpacity('1')
       spinerToggle("off");
-      shadowForm("100%");
     }
   });
 });

@@ -24,35 +24,25 @@ function logToFile($logFile, $data) {
 function getGeoData($ip) {
     $geoApiUrl = "https://ipinfo.io/$ip?token=7633c71cf1f808";
 
-    // Ініціалізація cURL
     $ch = curl_init($geoApiUrl);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-
     curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);  
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); 
 
-    // Виконання запиту
     $geoResponse = curl_exec($ch);
 
-    // Перевірка на помилки cURL
     if (curl_errno($ch)) {
-        // Якщо є помилка при отриманні геоданих, то просто присвоюємо null
         curl_close($ch);
         return null;
     }
-    
     curl_close($ch);
 
-    // Повернення результату у вигляді масиву
     return json_decode($geoResponse, true);
 }
 
-// Записуємо запит у лог
-// Отримання геоданих (замість цього буде присвоєно null, навіть якщо не вдалось отримати геодані)
-// $geoData = getGeoData($_SERVER['REMOTE_ADDR']); 
-$geoData = getGeoData('8.8.8.8'); 
-
+// Логування запитів
+$geoData = getGeoData('8.8.8.8');
 $requestData = [
     'method' => $_SERVER['REQUEST_METHOD'],
     'headers' => getallheaders(),
@@ -62,7 +52,18 @@ $requestData = [
 ];
 logToFile($logFile, ['Request' => $requestData]);
 
-// Перевірка, чи це POST-запит
+// Підключення до бази даних SQLite
+try {
+    $pdo = new PDO('sqlite:' . __DIR__ . '/database.sqlite');
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    $response = ['status' => 'error', 'message' => 'Database connection failed.'];
+    logToFile($logFile, ['Response' => $response]);
+    echo json_encode($response);
+    exit;
+}
+
+// Обробка POST-запитів
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $errors = [];
     $firstName = trim($_POST['first_name'] ?? '');
@@ -70,7 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $phone = trim($_POST['phone'] ?? '');
     $time = trim($_POST['select_service'] ?? '');
     $comments = trim($_POST['comments'] ?? '');
-    $price = trim($_POST['price'] ?? '');
+    $price = trim($_POST['select_price'] ?? '');
     $email = trim($_POST['email'] ?? '');
 
     // Валідація
@@ -88,15 +89,50 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo json_encode($response);
         exit;
     }
-   
-    // Відповідь
-    $response = [
-        'status' => 'success',
-        'redirectUrl' => 'success_page.php',
-    ];
-    logToFile($logFile, ['Response' => $response]);
-    echo json_encode($response);
-    exit;
+
+    // Збереження даних у базі даних
+    try {
+        // Перевіряємо чи існує користувач
+        $stmt = $pdo->prepare("SELECT id FROM users WHERE phone = :phone");
+        $stmt->execute(['phone' => $phone]);
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if (!$user) {
+            // Додаємо нового користувача
+            $stmt = $pdo->prepare("INSERT INTO users (first_name, last_name, email, phone) VALUES (:first_name, :last_name, :email, :phone)");
+            $stmt->execute([
+                'first_name' => $firstName,
+                'last_name' => $lastName,
+                'email' => $email,
+                'phone' => $phone,
+            ]);
+            $userId = $pdo->lastInsertId();
+        } else {
+            $userId = $user['id'];
+        }
+
+        // Додаємо повідомлення
+        $stmt = $pdo->prepare("INSERT INTO messages (user_id, message, appointment_time, price) VALUES (:user_id, :message, :appointment_time, :price)");
+        $stmt->execute([
+            'user_id' => $userId,
+            'message' => $comments,
+            'appointment_time' => $time,
+            'price' => $price,
+        ]);
+
+        $response = [
+            'status' => 'success',
+            'redirectUrl' => 'success_page.php',
+        ];
+        logToFile($logFile, ['Response' => $response]);
+        echo json_encode($response);
+        exit;
+    } catch (PDOException $e) {
+        $response = ['status' => 'error', 'message' => 'Database error: ' . $e->getMessage()];
+        logToFile($logFile, ['Response' => $response]);
+        echo json_encode($response);
+        exit;
+    }
 } else {
     $response = ['status' => 'error', 'message' => 'Invalid request method.'];
     logToFile($logFile, ['Response' => $response]);
