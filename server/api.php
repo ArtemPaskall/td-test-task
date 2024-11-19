@@ -11,6 +11,12 @@ header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type");
 
+// **Додані заголовки для XSS-захисту**
+header("X-Content-Type-Options: nosniff");
+header("X-Frame-Options: SAMEORIGIN");
+header("Content-Security-Policy: script-src 'self' 'unsafe-inline'; object-src 'none';");
+header("X-XSS-Protection: 1; mode=block");
+
 // Файл для журналу
 $logFile = 'requests.log';
 
@@ -28,8 +34,8 @@ function getGeoData($ip) {
     $ch = curl_init($geoApiUrl);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);  
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); 
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 
     $geoResponse = curl_exec($ch);
 
@@ -40,6 +46,22 @@ function getGeoData($ip) {
     curl_close($ch);
 
     return json_decode($geoResponse, true);
+}
+
+// Санітизація для XSS-захисту
+function sanitizeInput($data) {
+    return htmlspecialchars(trim($data), ENT_QUOTES, 'UTF-8');
+}
+
+// Санітизація виводу
+function sanitizeOutput($data) {
+    if (is_array($data)) {
+        foreach ($data as $key => $value) {
+            $data[$key] = sanitizeOutput($value);
+        }
+        return $data;
+    }
+    return htmlspecialchars($data, ENT_QUOTES, 'UTF-8');
 }
 
 // Логування запитів
@@ -77,22 +99,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 
     $errors = [];
-    $firstName = trim($_POST['first_name'] ?? '');
-    $lastName = trim($_POST['last_name'] ?? '');
-    $phone = trim($_POST['phone'] ?? '');
-    $time = trim($_POST['select_service'] ?? '');
-    $comments = trim($_POST['comments'] ?? '');
-    $price = trim($_POST['select_price'] ?? '');
-    $email = trim($_POST['email'] ?? '');
+    $firstName = sanitizeInput($_POST['first_name'] ?? '');
+    $lastName = sanitizeInput($_POST['last_name'] ?? '');
+    $phone = sanitizeInput($_POST['phone'] ?? '');
+    $time = sanitizeInput($_POST['select_service'] ?? '');
+    $comments = sanitizeInput($_POST['comments'] ?? '');
+    $price = sanitizeInput($_POST['select_price'] ?? '');
+    $email = sanitizeInput($_POST['email'] ?? '');
 
-    // Валідація
-    if (empty($firstName)) $errors[] = "First name is required.";
-    if (empty($lastName)) $errors[] = "Last name is required.";
-    if (empty($phone)) $errors[] = "Phone number is required.";
+    // Додаткова валідація
+    if (empty($firstName) || mb_strlen($firstName) > 50) $errors[] = "Invalid first name.";
+    if (empty($lastName) || mb_strlen($lastName) > 50) $errors[] = "Invalid last name.";
+    if (!preg_match('/^\+?[0-9]{7,15}$/', $phone)) $errors[] = "Invalid phone number.";
     if (empty($time) || $time === 'selecttime') $errors[] = "Please choose a time.";
-    if (!empty($email) && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $errors[] = "Invalid email format.";
-    }
+    if (!empty($email) && !filter_var($email, FILTER_VALIDATE_EMAIL)) $errors[] = "Invalid email format.";
+    if (mb_strlen($comments) > 500) $errors[] = "Comments are too long.";
 
     if (!empty($errors)) {
         $response = ['status' => 'error', 'errors' => $errors];
@@ -133,7 +154,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $response = [
             'status' => 'success',
-            'redirectUrl' => 'success_page.php',
+            'redirectUrl' => '../success/index.html',
         ];
         logToFile($logFile, ['Response' => $response]);
         echo json_encode($response);

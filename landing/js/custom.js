@@ -37,9 +37,18 @@
        LOADER -->
         =============================================== */
 
-    $(window).load(function() {
-        $("#preloader").on(500).fadeOut();
-        $(".preloader").on(600).fadeOut("slow");
+    // $(window).load(function() {
+    //     $("#preloader").on(500).fadeOut();
+    //     $(".preloader").on(600).fadeOut("slow");
+    // });
+
+    $(document).ready(function() {
+        setTimeout(function() {
+            $("#preloader").fadeOut();
+        }, 500);
+        setTimeout(function() {
+            $(".preloader").fadeOut("slow");
+        }, 600);
     });
 
     /* ==============================================
