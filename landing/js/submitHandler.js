@@ -130,7 +130,7 @@ document.querySelectorAll(".my-form").forEach((form) => {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       const result = await response.json();
-      console.log(result);
+
       if (result.status === "success") {
         const successEvent = new Event("success");
         form.dispatchEvent(successEvent);

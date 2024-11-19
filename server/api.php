@@ -65,7 +65,7 @@ function sanitizeOutput($data) {
 }
 
 // Логування запитів
-$geoData = getGeoData('8.8.8.8');
+$geoData = getGeoData($_SERVER['REMOTE_ADDR']);
 $requestData = [
     'method' => $_SERVER['REQUEST_METHOD'],
     'headers' => getallheaders(),
